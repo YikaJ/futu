@@ -1,0 +1,23 @@
+# nodejs
+node_modules
+npm-debug.log
+
+# build files
+dist
+build
+
+# OS generated files
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+.env
+.env.local
+.vscode
