@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@agentdeskai/browser-tools-mcp':
+    specifier: 1.2.0
+    version: 1.2.0
   '@modelcontextprotocol/inspector':
     specifier: ^0.6.0
     version: 0.6.0(@types/node@18.19.80)(typescript@4.9.5)
@@ -48,6 +51,24 @@ devDependencies:
     version: 4.9.5
 
 packages:
+
+  /@agentdeskai/browser-tools-mcp@1.2.0:
+    resolution: {integrity: sha512-QMq63A7toPJFxusHx00tWNGBKAs2toYt9qNS77QOyuUScHup6ZDjz/Y4bMwGzHPMUu/SiA6Q3Nw02MY53Ii2eA==}
+    hasBin: true
+    dependencies:
+      '@modelcontextprotocol/sdk': 1.7.0
+      body-parser: 1.20.3
+      cors: 2.8.5
+      express: 4.21.2
+      llm-cost: 1.0.5
+      node-fetch: 2.7.0
+      ws: 8.18.1
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - supports-color
+      - utf-8-validate
+    dev: false
 
   /@ampproject/remapping@2.3.0:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -3594,6 +3615,12 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
+  /llm-cost@1.0.5:
+    resolution: {integrity: sha512-1JBZBwmcgX1yIEY9ky9mYuU7VnaE82siEOZJgG9Gq6qNs+VLUlU1X24yHjBRjGdwoBhfn5APJIdifdMrcpvH1w==}
+    dependencies:
+      tiktoken: 1.0.20
+    dev: false
+
   /locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
     engines: {node: '>=8'}
@@ -3789,6 +3816,18 @@ packages:
   /negotiator@1.0.0:
     resolution: {integrity: sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==}
     engines: {node: '>= 0.6'}
+    dev: false
+
+  /node-fetch@2.7.0:
+    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
     dev: false
 
   /node-int64@0.4.0:
@@ -4520,6 +4559,10 @@ packages:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
 
+  /tiktoken@1.0.20:
+    resolution: {integrity: sha512-zVIpXp84kth/Ni2me1uYlJgl2RZ2EjxwDaWLeDY/s6fZiyO9n1QoTOM5P7ZSYfToPvAvwYNMbg5LETVYVKyzfQ==}
+    dev: false
+
   /tmpl@1.0.5:
     resolution: {integrity: sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw==}
     dev: true
@@ -4534,6 +4577,10 @@ packages:
   /toidentifier@1.0.1:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
+    dev: false
+
+  /tr46@0.0.3:
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
 
   /tree-kill@1.2.2:
@@ -4760,6 +4807,17 @@ packages:
     dependencies:
       makeerror: 1.0.12
     dev: true
+
+  /webidl-conversions@3.0.1:
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+    dev: false
+
+  /whatwg-url@5.0.0:
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
+    dev: false
 
   /which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}

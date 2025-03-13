@@ -8,7 +8,6 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
     "watch": "tsc -w",
     "test": "jest",
     "lint": "eslint src --ext .ts"
@@ -28,6 +27,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "@agentdeskai/browser-tools-mcp": "1.2.0",
     "@modelcontextprotocol/inspector": "^0.6.0",
     "@modelcontextprotocol/sdk": "^1.7.0",
     "axios": "^1.2.2",

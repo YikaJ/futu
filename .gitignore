@@ -21,3 +21,5 @@ pids
 .env
 .env.local
 .vscode
+
+__pycache__
