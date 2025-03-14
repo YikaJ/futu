@@ -26,7 +26,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 });
 
 server.setRequestHandler(CallToolRequestSchema, (request) => {
-  return runToolsAction(request.params.name, request.params.arguments);
+  return runToolsAction(request.params.name as any, request.params.arguments);
 });
 
 async function main() {
